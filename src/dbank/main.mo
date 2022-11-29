@@ -3,7 +3,7 @@ import Time "mo:base/Time";
 import Float "mo:base/Float";
 actor DBank { // actor is used to create canisters
   stable var currentValue : Float = 300; //stablekeyword changes this variable so that its state doesn't reset
-  // currentValue := 100;
+  currentValue := 300;
 
   // let id = 2348923840928349;//let creates immutable variables
   // Debug.print("Hello");//by default only text can be printed
