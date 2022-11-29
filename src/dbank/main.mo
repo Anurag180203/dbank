@@ -1,7 +1,7 @@
 import Debug "mo:base/Debug"; // used to print values and text
 actor DBank { // actor is used to create canisters
-  var currentValue : Nat = 300;
-  currentValue := 100;
+  stable var currentValue : Nat = 300; //stablekeyword changes this variable so that its state doesn't reset
+  // currentValue := 100;
 
   // let id = 2348923840928349;//let creates immutable variables
   // Debug.print("Hello");//by default only text can be printed
