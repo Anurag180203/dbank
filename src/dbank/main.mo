@@ -3,7 +3,7 @@ import Time "mo:base/Time";
 import Float "mo:base/Float";
 actor DBank { // actor is used to create canisters
   stable var currentValue : Float = 300; //stablekeyword changes this variable so that its state doesn't reset
-  currentValue := 300;
+  // currentValue := 300;
 
   // let id = 2348923840928349;//let creates immutable variables
   // Debug.print("Hello");//by default only text can be printed
@@ -30,7 +30,7 @@ actor DBank { // actor is used to create canisters
     Debug.print(debug_show(currentValue));
   };
 
-  public func withdrawl(amount: Float) {
+  public func withdraw(amount: Float) {
     let tempValue: Float = currentValue - amount;
     if(tempValue >=0){
       currentValue -= amount;
